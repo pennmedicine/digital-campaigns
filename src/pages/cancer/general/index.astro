@@ -1,0 +1,69 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import Form from '@components/Form.astro';
+
+var campaignPhone = "215-316-5136"
+var campaignTel = "tel:" + campaignPhone.replaceAll("-","");
+---
+
+<Layout title="Abramson Cancer Center | Penn Medicine">
+    <Header href="#" campaignPhone="215-316-5136">
+        <hgroup class="screen-reader-only">
+            <h1>Penn Medicine</h1>
+            <p>Abramson Cancer Center</p>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#request-appointment">Request Appointment</a></li>
+                <li><a href="#cancer-types">Cancer Types</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <section id="request-appointment" class="bg-white-to-blue">
+            <div class="content two-columns">
+                <section>
+                    <hgroup>
+                        <h2>Advanced and Personalized Cancer Care</h2>
+                    </hgroup>
+                    <p>We understand that every person and every cancer is unique.</p>
+                    <p>That's why Penn Medicine's Abramson Cancer Center team is dedicated to creating a treatment plan tailored to your individual needs, so you can receive the best possible care and get back to living your life.</p>
+                    <img src="https://lp.pennmedicine.org/-/media/Images/digitalcampaigns/cancer/general/cancergeneral.jpg" class="inline-image" loading="lazy">
+                </section>
+                <section id="form-container">
+                    <h3>Request an Appointment</h3>
+                    <Form formId="63"></Form>
+                </section>
+            </div>
+        </section>
+        <section id="cancer-types" class="bg-blue-lightest">
+            <div class="content one-column">
+                <hgroup>
+                    <h2>Cancer Type and Treatment Options</h2>
+                </hgroup>
+                <p>At Penn Medicine's Abramson Cancer Center, we are committed to being by your side every step of the way.</p>
+                <p>Our team of world-class cancer specialists is highly experienced in treating all types of cancer, including:</p>
+                <ul class="two-columns">
+                    <li>breast cancer</li>
+                    <li>carcinomas</li>
+                    <li>colon cancer</li>
+                    <li>gastrointestinal (GI) cancer</li>
+                    <li>leukemia</li>
+                    <li>liver cancer</li>
+                    <li>lung cancer</li>
+                    <li>lymphoma</li>
+                    <li>melanoma</li>
+                    <li>pancreatic cancer</li>
+                    <li>prostate cancer</li>
+                    <li>rectal cancer</li>
+                    <li>sarcomas</li>
+                    <li>and many others</li>
+                </ul>
+                <p>We offer a wide range of treatments that are the latest in cancer care, including proton therapy, immunotherapy and advanced surgical options.</p>
+                <p>We also are committed to advancing cancer research and treatment through clinical trials. Our patients have access to nearly 200 active trials across cancer types - some of which are offered only at Penn Medicine.</p>
+                <a href="#request-appointment" class="button section-cta">Request Appointment</a>
+            </div>
+        </section>
+    </main>
+</Layout>

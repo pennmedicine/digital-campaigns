@@ -1,0 +1,30 @@
+---
+import LayoutThankyou from '@layouts/LayoutThankyou.astro';
+import Header from '@components/Header.astro';
+
+var campaignPhone = "215-316-5136"
+var campaignTel = "tel:" + campaignPhone.replaceAll("-","");
+---
+
+<LayoutThankyou title="Abramson Cancer Center | Penn Medicine">
+    <Header href="/cancer/general" campaignPhone="215-316-5136">
+        <hgroup class="screen-reader-only">
+            <h1>Penn Medicine</h1>
+            <p>Abramson Cancer Center</p>
+        </hgroup>
+    </Header>
+    <main>
+        <section id="thank-you" class="bg-white">
+            <div class="content">
+                <section>
+                    <hgroup>
+                        <h2>Thank you for contacting Penn Medicine</h2>
+                    </hgroup>
+                    <p>A representative from Penn's Abramson Cancer Center will contact you shortly.</p>
+                    <p>If you requested information about scheduling an appointment for a second opinion or screening consultation, a specialized nurse navigator from Penn Medicine's Abramson Cancer Center will be in touch with you between the hours of 8:30 - 5:00pm, EST, Monday through Friday. For immediate assistance, please call <a href={campaignTel}>{campaignPhone}</a> and ask to speak to an Abramson Cancer Center representative. If you have symptoms of an urgent nature, please call your doctor or go to the nearest emergency room immediately.</p>
+                    <p>Thanks again for your interest in our program. We look forward to assisting you in any way we can.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+</LayoutThankyou>

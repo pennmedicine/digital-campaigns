@@ -1,0 +1,92 @@
+:root {
+    --form-input-padding: var(--size-1);
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: var(--gray-dark);
+    margin-top: var(--typography-spacing-sm);
+}
+
+input,
+select {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius-sm);
+    padding: var(--form-input-padding);
+    width: 100%;
+}
+
+input[title="Date of Birth"],
+input[title="Phone"],
+input[title="Zip/Postal Code"] {
+    width: 10rem;
+}
+
+input[type="submit"] {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: var(--typography-spacing)
+}
+
+input[type="submit"]:hover {
+    background-color: var(--blue-light);
+}
+
+span.field-hint-inactive,
+span.field-hint {
+    color: var(--gray);
+    padding: var(--form-input-padding);
+}
+
+.oneField {
+    margin-bottom: var(--typography-spacing-sm);
+}
+
+.reqMark:after {
+    content: " *";
+    color: var(--red);
+}
+
+.wFormContainer {
+    border-radius: var(--border-radius);
+}
+
+div.lengthIndicator {
+    display: none !important;
+}
+
+.errMsg {
+    font-size: var(--size-2-5);
+    color: var(--red);
+}
+
+input[aria-invalid="true"] {
+    border-color: var(--red);
+}
+
+.wFormFooter,
+p.supportInfo {
+    display: none;
+}
+
+/* Form Container Styles */
+#form-target {
+    padding: 0 var(--size-8);
+}
+#form-container {
+    width: 100%;
+}
+#form-container details {
+    color: var(--gray-dark);
+    padding-top: var(--typography-spacing);
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--gray-dark);
+}
+
+#form-container details summary {
+    margin-bottom: var(--typography-spacing);
+}

@@ -1,0 +1,10 @@
+img.inline-image {
+    display: none;
+    border-radius: var(--border-radius);
+}
+
+@media (min-width: 768px) {
+    img.inline-image {
+        display: inline-block;
+    }
+}

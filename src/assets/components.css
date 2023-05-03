@@ -1,0 +1,24 @@
+a.button {
+    background-color: var(--blue);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    color: white;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: var(--blue-light);
+}
+
+a.button.section-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    a.button.section-cta {
+        width: 50%;
+    }
+}

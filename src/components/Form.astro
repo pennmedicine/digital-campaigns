@@ -1,0 +1,25 @@
+---
+export interface Props {
+    formId: string;
+}
+
+const { formId } = Astro.props;
+
+const response = await fetch('https://pennmedicine.tfaforms.net/rest/forms/view/' + formId)
+const data = await response.text();
+const body = data.split('<!-- FORM: BODY SECTION -->')[1]
+---
+
+<div id="formTarget" set:html={body} />
+<details>
+    <summary>Commitment to your Privacy</summary>
+    <p>
+      Penn Medicine values your privacy and the confidentiality of the information
+      you choose to share. Penn Medicine wants you to use the websites without
+      being concerned that others will have access to your confidential
+      information.
+    </p>
+    <p>
+      <a href="https://www.pennmedicine.org/for-patients-and-visitors/patient-information/hipaa-and-privacy/privacy-statement" target="_blank">Read Full Privacy Statement</a>
+    </p>
+  </details>
