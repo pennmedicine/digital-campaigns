@@ -10,7 +10,7 @@ export default defineConfig({
         build: {
             rollupOptions: {
                 output: {
-                    assetFileNames: `-/media/Files/digitalcampaigns/assets/index[extname]`
+                    assetFileNames: `-/media/Files/digitalcampaigns/assets/main[extname]`
                 }
             }
         }

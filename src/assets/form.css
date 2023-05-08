@@ -2,7 +2,8 @@
     --form-input-padding: var(--size-1);
 }
 
-label {
+label,
+label span {
     font-weight: bold;
     font-size: 0.75rem;
     color: var(--gray-dark);
@@ -10,7 +11,8 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
     border-style: solid;
     border-width: 1px;
     border-radius: var(--border-radius-sm);
@@ -53,6 +55,7 @@ span.field-hint {
 
 .wFormContainer {
     border-radius: var(--border-radius);
+
 }
 
 div.lengthIndicator {
@@ -79,6 +82,7 @@ p.supportInfo {
 }
 #form-container {
     width: 100%;
+    padding-top:var(--gap-md);
 }
 #form-container details {
     color: var(--gray-dark);

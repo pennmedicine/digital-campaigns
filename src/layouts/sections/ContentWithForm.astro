@@ -1,0 +1,24 @@
+---
+import Form from '@components/Form.astro';
+
+export interface Props {
+	id: string;
+	class: string;
+    formId: string;
+}
+
+const { id, class: className, formId } = Astro.props;
+---
+<section id={id} class={className}>
+    <div class="two-columns">
+        <section>
+            <slot/>
+        </section>
+        <section id="form-container">
+            <slot name="form-heading">
+                <h3>Request an Appointment</h3>
+            </slot>
+            <Form formId={formId}></Form>
+        </section>
+    </div>
+</section>

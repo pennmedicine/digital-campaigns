@@ -1,40 +1,23 @@
 @import "./reset.css";
+@import "./properties.css";
+@import "./header.css";
 @import "./form.css";
 @import "./images.css";
 @import "./sections.css";
 @import "./typography.css";
-@import "./utility.css";
 @import "./components.css";
+@import "./utility.css";
 
 :root {
-    --max-width-lg: 1024px;
-    --red: #990000;
-    --blue-dark: #011f5b;
-    --blue: #085296;
-    --blue-light: #3c86c3;
-    --blue-lightest: aliceblue;
-    --gray-dark: #656c6e;
-    --gray: #c8cac9;
-    --gray-light: #eaeaea;
 
-
-    --size-1: .25rem;
-    --size-2: .5rem;
-    --size-2-5: .75rem;
-    --size-3: 1rem;
-    --size-4: 1.25rem;
-    --size-5: 1.5rem;
-    --size-6: 1.75rem;
-    --size-7: 2rem;
-    --size-8: 3rem;
-    --size-9: 4rem;
-    --size-10: 5rem;
 
     --header-height: 80px;
 
+    --grid-gap: var(--size-4);
     --gap: var(--size-3);
     --section-padding-x: var(--size-3);
     --section-padding-y: var(--size-8);
+
     --button-padding: var(--size-2);
 
     --border-radius-sm: var(--size-1);
@@ -43,8 +26,12 @@
     --typography-spacing: var(--size-3);
     --typography-spacing-sm: var(--size-2);
 
+    /* CONTENT WIDTH */
+    --container-max-width: 1024px;
+
     --content-max-width-sm: 420px;
     --content-max-width-md: 680px;
+    --content-max-width-lg: 680px;
 
 }
 
@@ -54,57 +41,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* HEADER SPECIFIC */
-
-header {
-    background-color: white;
-    width: 100%;
-    max-height: var(--header-height);
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    border-bottom-color: var(--blue-dark);
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-
-header>div {
-    max-width: var(--max-width-lg);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: var(--size-2);
-    align-items: center;
-}
-
-header svg {
-    height: 30px;
-}
-
-header nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-}
-
-header nav ul {
-    display: none;
-    width: 100%;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-header a {
-    color: var(--blue-dark);
-
-    text-decoration: none;
-}
-
-/* END HEADER */
-
-
-
-
 /* TYPOGRAPHY */
 hgroup,
 p {
@@ -112,18 +48,7 @@ p {
 }
 
 /* END TYPOGRAPHY */
-/* UTILITY CLASSES */
-.screen-reader-only {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
 
-/* END UTILITY CLASSES */
 @media (min-width: 240px) {
     html {
         background: pink;

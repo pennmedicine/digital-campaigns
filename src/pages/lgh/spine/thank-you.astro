@@ -1,0 +1,29 @@
+---
+import LayoutThankyou from '@layouts/LayoutThankyou.astro';
+import Header from '@components/Header.astro';
+
+var campaignPhone = "717-544-3148"
+var campaignTel = "tel:" + campaignPhone.replaceAll("-","");
+---
+
+<LayoutThankyou title="Neck and Back Pain | Lancaster General Health">
+    <Header href="/lgh/spine" campaignPhone={campaignPhone}>
+        <hgroup class="screen-reader-only">
+            <h1>Lancaster General Health</h1>
+            <p>Neck and Back Pain</p>
+        </hgroup>
+    </Header>
+    <main>
+        <section id="thank-you" class="bg-white">
+            <div class="content">
+                <section>
+                    <hgroup>
+                        <h2>Thank you for contacting Lancaster General Health</h2>
+                    </hgroup>
+                    <p>A nurse navigator from Penn Medicine Lancaster General Health will contact you soon.</p>
+                    <p>For immediate assistance or if you have symptoms of an urgent nature, please call your doctor or go to the nearest emergency room immediately.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+</LayoutThankyou>

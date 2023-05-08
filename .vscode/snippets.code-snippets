@@ -15,4 +15,67 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+	"index": {
+		"scope": "astro",
+		"prefix": "dc",
+		"body": [
+			"---",
+			"import Layout from '@layouts/Layout.astro';",
+			"import Header from '@components/Header.astro';",
+			"",
+			"var campaignPhone = \"215-800-7366\"",
+			"---",
+			"",
+			"<Layout title=\"Abramson Cancer Center | Penn Medicine\">",
+			"\t<Header href=\"#\" campaignPhone={campaignPhone}>",
+			"\t\t<hgroup class=\"screen-reader-only\">",
+            "\t\t\t<h1>Penn Medicine</h1>",
+            "\t\t\t<p>Abramson Cancer Center</p>",
+        	"\t\t</hgroup>",
+			"\t</Header>",
+			"\t<main>",
+			"\t\t<!-- Insert Sections Here -->",
+			"\t</main>",
+			"</Layout>"
+		]
+	},
+	"content": {
+		"scope": "astro",
+		"prefix": "section",
+		"body": [
+			"<Content id=\"${1}\" class=\"${2}\">",
+			"\t<hgroup>",
+			"\t\t<h2>${3}</h2>",
+			"\t</hgroup>",
+			"",
+			"</Content>"
+		]
+	},
+	"small": {
+		"scope": "css",
+		"prefix": "mq",
+		"body": [
+			"@media (min-width: 640px) {",
+			"",
+			"}"
+		]
+	},
+	"medium": {
+		"scope": "css",
+		"prefix": "mq",
+		"body": [
+			"@media (min-width: 768px) {",
+			"",
+			"}"
+		]
+	},
+	"large": {
+		"scope": "css",
+		"prefix": "mq",
+		"body": [
+			"@media (min-width: 1024px) {",
+			"",
+			"}"
+		]
+	}
 }

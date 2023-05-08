@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
-    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://pennmedicine.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" async></script>
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://pennmedicine.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js"></script>
     <script type="text/javascript">
         document.addEventListener( "FA__DOMContentLoaded", function() {
             const FORM_TIME_START = Math.floor( ( new Date ).getTime() / 1000 );
@@ -57,11 +57,11 @@ const { title } = Astro.props;
         } );
     </script>
 
-    <script type="text/javascript" src="https://pennmedicine.tfaforms.net/wForms/3.11/js/wforms.js?v=da0081d05036ee980ddfcaaa15b84592ca742a65" async></script>
+    <script type="text/javascript" src="https://pennmedicine.tfaforms.net/wForms/3.11/js/wforms.js?v=da0081d05036ee980ddfcaaa15b84592ca742a65"></script>
     <script type="text/javascript">
         wFORMS.behaviors.prefill.skip = false;
     </script>
-    <script type="text/javascript" src="https://pennmedicine.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=da0081d05036ee980ddfcaaa15b84592ca742a65" async></script>
+    <script type="text/javascript" src="https://pennmedicine.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=da0081d05036ee980ddfcaaa15b84592ca742a65"></script>
 
 </head>
 

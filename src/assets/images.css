@@ -8,3 +8,9 @@ img.inline-image {
         display: inline-block;
     }
 }
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
