@@ -1,0 +1,48 @@
+header {
+    background-color: white;
+    width: 100%;
+    max-height: var(--header-height);
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-bottom-color: var(--blue-dark);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+
+header>div {
+    max-width: var(--size-content-5);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size-2);
+    align-items: center;
+}
+
+header svg {
+    height: 30px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+header nav ul {
+    display: none;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    display: flex;
+}
+header a {
+    font-size: var(--font-size-0);
+    color: var(--gray-dark);
+    text-decoration: none;
+}

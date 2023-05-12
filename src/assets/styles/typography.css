@@ -1,0 +1,77 @@
+/*  TYPOGRAPHY CONTENT
+/*  Flow content - (p, ul, ol) and Heading Content - (h1-h6, hgroup)
+/*  https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories
+*/
+:root {
+    --font-size: var(--base-size);
+    --font-type-scale: var(--type-scale);
+    --h1-size: calc(var(--h2-size) * var(--font-type-scale));
+    --h2-size: calc(var(--h3-size) * var(--font-type-scale));
+    --h3-size: calc(var(--h4-size) * var(--font-type-scale));
+    --h4-size: calc(var(--base-size));
+    --h5-size: calc();
+    --heading-color: var(--blue);
+    --subheading-color: var(--red);
+    --line-height: 30px;
+    --paragraph-spacing: var(--size-3);
+    --details-font-size: var(--font-size-0);
+    --details-color: var(--gray-dark);
+}
+
+hgroup {
+    margin-bottom:calc(var(--paragraph-spacing) * var(--font-type-scale))
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+line-height: 1;
+}
+
+h1 {
+    font-size: calc(var(--font-size) * var(--font-type-scale) * 5)
+}
+
+h2 {
+    font-size: var(--h2-size);
+    color: var(--heading-color);
+    font-weight: 800;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    color: var(--heading-color);
+}
+
+hgroup :is(h1, h2, h3, h4, h5, h6)~p {
+    font-size: var(--h4-size);
+    font-weight: bold;
+    color: var(--subheading-color);
+    margin-top: var(--paragraph-spacing);
+    margin-bottom: 0;
+}
+
+p {
+    line-height: var(--line-height);
+}
+
+p,
+ul,
+ol,
+summary {
+    margin-bottom: var(--paragraph-spacing);
+}
+
+details {
+    color: var(--details-color);
+}
+
+details summary {}
+
+details p {
+    font-size: var(--details-font-size);
+}
+
+@media (min-width: 768px) {
+    ul.two-columns {
+        column-count: 2;
+    }
+}

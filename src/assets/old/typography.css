@@ -1,0 +1,44 @@
+h1 {}
+
+h2 {
+    color: var(--blue-dark);
+    font-weight: 800;
+    font-size: var(--size-7);
+    line-height: 1;
+    margin-bottom: calc(var(--typography-spacing) * 2);
+}
+h3 {
+    color: var(--blue);
+    font-size: var(--size-5);
+    line-height: 1;
+    margin-bottom: var(--typography-spacing);
+}
+hgroup,
+p {
+    margin-bottom: var(--typography-spacing)
+}
+
+section ul {
+    margin-bottom: var(--typography-spacing);
+}
+
+:is(p,ul,ol) + :is(h1,h2,h3,h4,h5) {
+    margin-top: calc(var(--typography-spacing) * 2)
+}
+
+/* /* SUBHEADINGS */
+hgroup :is(h1,h2,h3,h4,h5,h6):has(+p) {
+    margin-bottom: calc(var(--typography-spacing) * 0.5);
+}
+hgroup :is(h1,h2,h3,h4,h5,h6) ~ p {
+    color: var(--red);
+    font-weight: bold;
+}
+@media (min-width: 640px) {
+    section ul.two-columns {
+        columns: 2;
+    }
+    section ul.four-columns {
+        columns: 4;
+    }
+}

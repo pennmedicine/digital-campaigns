@@ -1,16 +1,17 @@
 ---
 export interface Props {
     formId: string;
+    formName: string;
 }
 
-const { formId } = Astro.props;
+const { formId, formName } = Astro.props;
 
 const response = await fetch('https://pennmedicine.tfaforms.net/rest/forms/view/' + formId)
 const data = await response.text();
 const body = data.split('<!-- FORM: BODY SECTION -->')[1];
 ---
 <script src="../assets/scripts/form-assembly-manager.js"></script>
-<div id="formTarget" set:html={body} />
+<div id="formTarget" set:html={body} data-formname={formName}/>
 <details>
     <summary>Commitment to your Privacy</summary>
     <p>

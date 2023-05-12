@@ -4,7 +4,7 @@ import ContentWithForm from '@layouts/sections/ContentWithForm.astro';
 import Content from '@layouts/sections/Content.astro';
 
 import Header from '@components/Header.astro';
-import HeadshotWithTitle from '@components/HeadshotWithTitle.astro';
+import HeadshotWithName from '@components/HeadshotWithName.astro';
 import Footer from '@components/Footer.astro';
 
 var campaignPhone = "717-544-3148"
@@ -27,13 +27,15 @@ var campaignPhone = "717-544-3148"
     </Header>
     <main>
         <!-- Insert Sections Here -->
-        <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="77">
-            <hgroup>
+        <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="77" formName="">
+            <hgroup slot="hgroup">
                 <h2>Find Relief For Back And Neck Pain</h2>
             </hgroup>
-            <p>If you are dealing with pain that is not getting better, the spine specialists with the Penn Medicine Lancaster General Health Neuroscience Institute are here to help.</p>
-            <p>We are focused on providing you with the most accurate diagnosis and most appropriate treatment plan to relieve your back and neck pain. Our spine team includes pain management specialists, neurosurgeons, and physical rehabilitation therapists working together to guide you from evaluation through recovery.</p>
-            <img src="https://lp.pennmedicine.org/-/media/f0954a75d0644cf5aabff1dd356e7bfa.ashx" class="inline-image" loading="lazy">
+            <section slot="copy">
+                <p>If you are dealing with pain that is not getting better, the spine specialists with the Penn Medicine Lancaster General Health Neuroscience Institute are here to help.</p>
+                <p>We are focused on providing you with the most accurate diagnosis and most appropriate treatment plan to relieve your back and neck pain. Our spine team includes pain management specialists, neurosurgeons, and physical rehabilitation therapists working together to guide you from evaluation through recovery.</p>
+                <img src="https://lp.pennmedicine.org/-/media/f0954a75d0644cf5aabff1dd356e7bfa.ashx" class="inline-image" loading="lazy">
+            </section>
         </ContentWithForm>
         <Content id="conditions" class="bg-white">
             <hgroup>
@@ -60,8 +62,8 @@ var campaignPhone = "717-544-3148"
             </hgroup>
             <p>Once your back or neck pain is accurately diagnosed, our team works with you to determine a treatment plan that is best for you. Through non-surgical and surgical treatments, our team is focused on helping you live a life not held back by pain.</p>
             <p>Our treatment plans for back and neck pain include:</p>
-            <div class="two-columns wide">
-                <section class="list-with-icon">
+            <div class="card-gallery two-columns">
+                <section class="card white">
                     <img src="https://img.icons8.com/ultraviolet/120/000000/physical-therapy.png" loading="lazy">
                     <hgroup>
                         <h3>Non-Surgical Treatments</h3>
@@ -75,7 +77,7 @@ var campaignPhone = "717-544-3148"
                         <li>Physical and Occupational Therapy</li>
                     </ul>
                 </section>
-                <section class="list-with-icon">
+                <section class="card white">
                     <img src="https://img.icons8.com/ultraviolet/120/000000/back-muscles.png" loading="lazy">
                     <hgroup>
                         <h3>Surgical Treatments</h3>
@@ -96,43 +98,49 @@ var campaignPhone = "717-544-3148"
                 <h2>Our Team of Specialists</h2>
             </hgroup>
             <p>Neurosurgeons, pain management specialists, and rehabilitation therapists with the Penn Medicine Lancaster General Health Neuroscience Institute take a team approach to your back and neck pain—from initial evaluation through rehabilitation.</p>
-            <h3>Neurosurgeons</h3>
-            <ul class="headshot-gallery">
+            <hgroup>
+                <h3>Neurosurgeons</h3>
+            </hgroup>
+            <ul class="card-gallery three-columns">
                 <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/calnan_daniel_500x672.ashx" name="Daniel Calnan, MD, PhD" />
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/calnan_daniel_500x672.ashx" name="Daniel Calnan, MD, PhD" />
                 </li>
                 <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/hernandez_nick.ashx" name="R. Nick Hernandez, MD" />
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/hernandez_nick.ashx" name="R. Nick Hernandez, MD" />
                 </li>
                 <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/kager_chris.ashx" name="Christopher Kager, MD" />
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/kager_chris.ashx" name="Christopher Kager, MD" />
                 </li>
                 <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/kuhlengel_keith.ashx" name="Keith Kuhlengel, MD, FACS" />
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/kuhlengel_keith.ashx" name="Keith Kuhlengel, MD, FACS" />
                 </li>
                 <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/thurmond_james.ashx" name="James Thurmond, MD" />
-                </li>
-            </ul>
-            <h3>Pain Management Specialists</h3>
-            <ul class="headshot-gallery">
-                <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/reddy_madhavi_pain.ashx" name="Madhavi Reddy, MD" />
-                </li>
-                <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/roberts_robert_pain.ashx" name="Robert Roberts, III, MD" />
-                </li>
-                <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/sandusky_daniel_pain.ashx" name="Daniel Sandusky, MD" />
-                </li>
-                <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/tonthattonypain.ashx" name="Tony Ton-That, MD" />
-                </li>
-                <li>
-                    <HeadshotWithTitle imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/wong_andrew.ashx" name="Andrew Wong, DO" />
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/thurmond_james.ashx" name="James Thurmond, MD" />
                 </li>
             </ul>
-            <h3>Advanced Practitioners</h3>
+            <hgroup>
+                <h3>Pain Management Specialists</h3>
+            </hgroup>
+            <ul class="card-gallery three-columns">
+                <li>
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/reddy_madhavi_pain.ashx" name="Madhavi Reddy, MD" />
+                </li>
+                <li>
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/roberts_robert_pain.ashx" name="Robert Roberts, III, MD" />
+                </li>
+                <li>
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/sandusky_daniel_pain.ashx" name="Daniel Sandusky, MD" />
+                </li>
+                <li>
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/tonthattonypain.ashx" name="Tony Ton-That, MD" />
+                </li>
+                <li>
+                    <HeadshotWithName imgSrc="https://lp.pennmedicine.org/-/media/images/digitalcampaigns/lgh/spine/headshots/wong_andrew.ashx" name="Andrew Wong, DO" />
+                </li>
+            </ul>
+            <hgroup>
+                <h3>Advanced Practitioners</h3>
+            </hgroup>
             <ul class="two-columns">
                 <li>Samuel Hertig, PA-C</li>
                 <li>Lisa Fedora, DNP, CRNP</li>

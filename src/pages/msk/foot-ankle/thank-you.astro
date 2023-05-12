@@ -1,0 +1,29 @@
+---
+import LayoutThankyou from '@layouts/LayoutThankyou.astro';
+import Header from '@components/Header.astro';
+
+var campaignPhone = "717-544-3148"
+var campaignTel = "tel:" + campaignPhone.replaceAll("-","");
+---
+
+<LayoutThankyou title="Expert Foot and Ankle Care | Penn Medicine">
+    <Header href="/lgh/spine" campaignPhone={campaignPhone}>
+        <hgroup class="screen-reader-only">
+            <h1>Penn Medicine</h1>
+            <p>Penn Orthopaedics - Expert Foot and Ankle Care</p>
+        </hgroup>
+    </Header>
+    <main>
+        <section id="thank-you" class="bg-white">
+            <div class="content">
+                <section>
+                    <hgroup>
+                        <h2>Thank you!</h2>
+                    </hgroup>
+                    <p>We received your request to schedule an appointment with Penn Orthopaedics. A member of our team will call you back between 8:30 am and 5 pm, Monday through Friday, to help you schedule. </p>
+                    <p>If you require immediate assistance, please call us at <a href="tel:8007897366">800-789-7366</a>. </p>
+                </section>
+            </div>
+        </section>
+    </main>
+</LayoutThankyou>

@@ -1,0 +1,47 @@
+/* CONTENT */
+:root {
+    --first-section-padding-top: var(--size-7);
+    --section-padding-y: var(--size-10);
+    --section-border-color: var(--blue);
+    --content-container-max-width: var(--size-content-4);
+    --content-container-max-width-wide: var(--size-content-5);
+    --grid-gap: var(--size-3);
+    --content-padding: var(--size-3);
+}
+main {
+
+}
+
+main > section {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--section-border-color);
+}
+main>section:first-of-type {
+    padding-top: var(--first-section-padding-top);
+}
+main>section:last-of-type {
+    border: none;
+}
+
+main > section > div {
+    max-width: var(--content-container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+}
+
+
+@media (min-width: 768px) {
+    main > section > div.two-columns {
+        max-width: var(--content-container-max-width-wide);
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--grid-gap);
+    }
+    main > section > div.two-columns > hgroup {
+        grid-column: span 2;
+    }
+}

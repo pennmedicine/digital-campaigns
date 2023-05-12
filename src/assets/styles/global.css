@@ -1,0 +1,54 @@
+:root {
+    --global-font-size: var(--base-size);
+    --button-text-color: var(--white);
+    --button-color: var(--blue);
+    --button-hover-color: var(--blue-light);
+    --button-radius: var(--border-radius-sm);
+    --button-padding: var(--size-2);
+    --button-color-green: var(--green);
+    --button-hover-color-green: var(--green-light);
+}
+
+html {
+    font-size: var(--global-font-size);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.screen-reader-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+/* /* Button Styles */
+.button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border-radius: var(--button-radius);
+    padding: var(--button-padding);
+    text-decoration: none;
+}
+.button:hover {
+    background-color: var(--button-hover-color);
+}
+.button.green {
+    background-color: var(--button-color-green);
+}
+.button.green:hover {
+    background-color: var(--button-hover-color-green);
+}
+
+/* /* Background Colors */
+.bg-white-to-blue {
+    background-image: linear-gradient(65deg, white 75%, #e7f5ff 75%);
+}
+.bg-blue-lightest {
+    background-color: var(--blue-lightest);
+}
+.bg-blue {
+    background-color: var(--blue);
+}

@@ -1,0 +1,84 @@
+/*  FORM STYLES
+/* /* Form Container
+/* /* form
+/* /* form elements
+*/
+:root {
+    --form-width: var(--size-content-2);
+    --label-size: var(--font-size-0);
+    --label-color: var(--gray-dark);
+    --input-radius: var(--border-radius-sm);
+    --input-padding: var(--size-1);
+    --submit-button-color: var(--blue);
+    --submit-button-color-hover: var(--blue-light);
+    --hint-color: var(--gray);
+    --required-color: var(--red);
+    --form-spacing: var(--paragraph-spacing);
+}
+#form-container {
+    display: flex;
+    justify-content: center;
+}
+#form-container > div {
+    width: 100%;
+    max-width: var(--form-width);
+}
+#form-container hgroup {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: var(--label-size);
+    color: var(--label-color);
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--input-radius);
+    padding: var(--input-padding);
+    width: 100%;
+}
+
+input[title="Date of Birth"],
+input[title="Phone"],
+input[title="Zip/Postal Code"] {
+    width: 10ch;
+}
+
+input[type="submit"] {
+    background-color: var(--submit-button-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: var(--form-spacing) 0;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--submit-button-color-hover);
+}
+
+.reqMark:after {
+    content: " *";
+    color: var(--required-color);
+}
+.errMsg {
+    font-size: var(--label-size);
+    color: var(--required-color);
+}
+input[aria-invalid="true"] {
+    border-color: var(--required-color);
+}
+
+span.field-hint-inactive,
+span.field-hint {
+    color: var(--hint-color);
+    padding: var(--input-padding);
+}
+
+div.lengthIndicator, .wFormFooter, p.supportInfo {
+    display: none !important;
+}

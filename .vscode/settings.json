@@ -1,6 +1,6 @@
 {
     // Controls the font family.
-    "editor.fontFamily": "Operator Mono",
+    "editor.fontFamily": "Lexend Zetta",
     // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
     "editor.lineHeight": 24,
     // Enables font ligatures

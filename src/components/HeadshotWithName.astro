@@ -1,0 +1,12 @@
+---
+export interface Props {
+	imgSrc: string;
+	name: string;
+}
+
+const { imgSrc, name } = Astro.props;
+---
+<div class="headshot with-name">
+    <img src={imgSrc} loading="lazy">
+    <p>{name}</p>
+</div>

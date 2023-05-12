@@ -5,20 +5,24 @@ export interface Props {
 	id: string;
 	class: string;
     formId: string;
+    formName: string;
 }
 
-const { id, class: className, formId } = Astro.props;
+const { id, class: className, formId, formName } = Astro.props;
 ---
 <section id={id} class={className}>
     <div class="two-columns">
-        <section>
-            <slot/>
-        </section>
+        <slot name="hgroup"/>
+        <slot name="copy"/>
         <section id="form-container">
-            <slot name="form-heading">
-                <h3>Request an Appointment</h3>
-            </slot>
-            <Form formId={formId}></Form>
+            <div>
+                <slot name="form-heading">
+                    <hgroup>
+                        <h3>Request an Appointment</h3>
+                    </hgroup>
+                </slot>
+                <Form formId={formId} formName={formName}></Form>
+            </div>
         </section>
     </div>
 </section>

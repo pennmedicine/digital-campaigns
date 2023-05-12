@@ -1,0 +1,109 @@
+@import "./reset.css";
+@import "./properties.css";
+@import "./header.css";
+@import "./form.css";
+@import "./media.css";
+@import "./sections.css";
+@import "./typography.css";
+@import "./components.css";
+@import "./utility.css";
+
+:root {
+
+
+    --header-height: 80px;
+
+    --grid-gap: var(--size-4);
+    --gap: var(--size-3);
+    --section-padding-x: var(--size-3);
+    --section-padding-y: var(--size-8);
+
+    --button-padding: var(--size-2);
+
+    --border-radius-sm: var(--size-1);
+    --border-radius: var(--size-2);
+
+    --typography-spacing: var(--size-3);
+    --typography-spacing-sm: var(--size-2);
+
+    /* CONTENT WIDTH */
+    --container-max-width: 1024px;
+
+    --content-max-width-sm: 420px;
+    --content-max-width-md: 680px;
+    --content-max-width-lg: 680px;
+
+}
+
+html {
+    font-size: 16px;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 240px) {
+    html {
+        background: pink;
+    }
+}
+
+@media (min-width: 360px) {
+    html {
+        background: orange;
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        background: yellow;
+    }
+}
+
+/* MD: TABLET */
+@media (min-width: 768px) {
+    html {
+        background: greenyellow;
+    }
+
+    /* * HEADER */
+    header svg {
+        height: 40px;
+    }
+
+    /* * END HEADER */
+}
+
+/* END MD: TABLET */
+/* LG: DESKTOP */
+@media (min-width: 1024px) {
+    html {
+        background: aliceblue;
+    }
+
+    html {
+        font-size: var(--size-4);
+    }
+
+    /* HEADER */
+
+
+    /* END HEADER */
+    /* SECTIONS */
+    main>section>div {
+        padding: 0;
+    }
+
+    /* END SECTIONS */
+
+
+}
+
+/* END LG: DESKTOP */
+@media (min-width: 1440px) {
+    html {
+        background: plum;
+    }
+}
+html {
+    background: white !important;
+}

@@ -1,0 +1,93 @@
+/*  LAYOUT - STYLES RELATING TO THE STANDARD LAYOUT OF THE PAGE
+/* /* HEADER
+/* /* MAIN
+/* /* FOOTER
+*/
+:root {
+    --header-height: 80px;
+    --header-max-width: var(--size-content-5);
+    --header-bg-color: white;
+    --header-border-color: var(--blue-dark);
+    --header-padding: var(--size-2);
+    --header-nav-font-size: var(--font-size-0);
+    --header-nav-font-color: var(--gray-dark);
+    --footer-height: 80px;
+    --footer-bg-color: var(--blue-dark);
+    --footer-padding: var(--size-7);
+}
+
+/* /* HEADER */
+header {
+    position: sticky;
+    z-index: 900;
+    width: 100%;
+    max-height: var(--header-height);
+    top: 0;
+    left: 0;
+    background: var(--header-bg-color);
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-bottom-color: var(--header-border-color);
+}
+
+header>div {
+    max-width: var(--header-max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--header-padding);
+    align-items: center;
+}
+
+header svg {
+    height: 30px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    font-size: var(--header-nav-font-size);
+}
+
+header nav ul {
+    display: none;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: flex;
+}
+
+header a {
+    font-size: var(--header-nav-font-size);
+    color: var(--header-nav-font-color);
+    text-decoration: none;
+}
+
+/* /* FOOTER */
+body>footer {
+    background: var(--footer-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: var(--footer-height);
+}
+
+@media (min-width: 768px) {
+    /* /* /* Header */
+    header svg {
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* /* /* Header */
+    header nav ul {
+        display: flex;
+    }
+}

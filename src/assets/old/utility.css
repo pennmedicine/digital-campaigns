@@ -1,0 +1,22 @@
+/* UTILITY CLASSES */
+.screen-reader-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* /* BACKGROUND COLORS */
+.bg-white-to-blue {
+    background-image: linear-gradient(65deg, white 75%, #e7f5ff 75%);
+}
+.bg-blue-lightest {
+    background-color: var(--blue-lightest);
+}
+.bg-blue {
+    background-color: var(--blue);
+}
+/* END UTILITY CLASSES */

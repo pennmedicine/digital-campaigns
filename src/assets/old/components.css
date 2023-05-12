@@ -1,0 +1,89 @@
+/* BUTTONS */
+a.button {
+    background-color: var(--blue);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    color: white;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: var(--blue-light);
+}
+
+a.button.section-cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    a.button.section-cta {
+        width: 50%;
+    }
+}
+/* /* BUTTON VARIANTS */
+a.button.large {
+    padding: calc(var(--button-padding) * 1.25);
+    font-weight: bold;
+}
+/* /* /* BUTTON COLORS */
+a.button.white {
+    background: var(--white);
+    color: var(--blue-dark);
+}
+a.button.green {
+    background: var(--green);
+    color: var(--white);
+}
+/* END BUTTONS */
+/* List With Icon */
+.list-with-icon {
+    width: 100%;
+    padding: var(--size-5);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray);
+    background-color: white;
+}
+.list-with-icon img {
+    margin: 0 auto;
+}
+.list-with-icon hgroup {
+margin: var(--typography-spacing) 0;
+}
+
+/* Headshot Gallery */
+ul.headshot-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--size-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.headshot-gallery li {
+
+}
+ul.headshot-gallery li img {
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+}
+ul.headshot-gallery li p {
+    font-weight: bold;
+    font-size: var(--size-4);
+    color: var(--blue-dark);
+    text-align: center;
+}
+@media (min-width: 768px) {
+ul.headshot-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+/* Footer */
+body > footer {
+    background: var(--blue-dark);
+    display: flex;
+    justify-content: center;
+    padding: var(--size-7);
+}

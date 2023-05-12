@@ -1,0 +1,60 @@
+/*
+CSS variables taken from: https://open-props.style/
+*/
+:root {
+    /* COLORS */
+    --white: white;
+    --red: #990000;
+    --blue-dark: #011f5b;
+    --blue: #085296;
+    --blue-light: #3c86c3;
+    --blue-lightest: aliceblue;
+    --gray-dark: #656c6e;
+    --gray: #c8cac9;
+    --gray-light: #eaeaea;
+    --green: #00AF72;
+    --green-light: #00e695;
+    /* CONTENT */
+    /* /* Fonts */
+    --base-size: 20px;
+    --type-scale: 1.333;
+    /* /* General Sizes */
+    --size-000: -.5rem;
+    --size-00: -.25rem;
+    --size-1: .25rem;
+    --size-2: .5rem;
+    --size-3: 1rem;
+    --size-4: 1.25rem;
+    --size-5: 1.5rem;
+    --size-6: 1.75rem;
+    --size-7: 2rem;
+    --size-8: 3rem;
+    --size-9: 4rem;
+    --size-10: 5rem;
+    --size-11: 7.5rem;
+    --size-12: 10rem;
+    --size-13: 15rem;
+    --size-14: 20rem;
+    --size-15: 30rem;
+    /* /* Font sizes */
+    --font-size-00: .5rem;
+    --font-size-0: .75rem;
+    --font-size-1: 1rem;
+    --font-size-2: 1.1rem;
+    --font-size-3: 1.25rem;
+    --font-size-4: 1.5rem;
+    --font-size-5: 2rem;
+    --font-size-6: 2.5rem;
+    --font-size-7: 3rem;
+    --font-size-8: 3.5rem;
+    /* /* Content Width Size */
+    --size-content-1: 20ch;
+    --size-content-2: 45ch;
+    --size-content-3: 60ch;
+    --size-content-4: 80ch;
+    --size-content-5: 90ch;
+    /* / * Border Radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 0.75rem;
+}

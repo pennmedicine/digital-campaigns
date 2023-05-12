@@ -32,11 +32,25 @@
             "\t\t\t<h1>Penn Medicine</h1>",
             "\t\t\t<p>Abramson Cancer Center</p>",
         	"\t\t</hgroup>",
+			"\t\t<nav>",
+            "\t\t\t<ul>",
+            "\t\t\t\t<li><a href=\"#\">Request Appointment</a></li>",
+            "\t\t\t</ul>",
+        	"\t\t</nav>",
 			"\t</Header>",
 			"\t<main>",
 			"\t\t<!-- Insert Sections Here -->",
 			"\t</main>",
 			"</Layout>"
+		]
+	},
+	"contentWithForm": {
+		"scope": "astro",
+		"prefix": "section",
+		"body": [
+			"<ContentWithForm id=\"request-appointment\" class=\"bg-white-to-blue\" formId=\"77\">",
+			"",
+			"</ContentWithForm>"
 		]
 	},
 	"content": {

@@ -1,0 +1,88 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Header from '@components/Header.astro';
+import ContentWithForm from '@layouts/sections/ContentWithForm.astro';
+import Content from '@layouts/sections/Content.astro';
+import MapEmbed from '@components/MapEmbed.astro';
+import Footer from '@components/Footer.astro';
+var campaignPhone = "215-800-7366"
+---
+
+<Layout title="Expert Foot and Ankle Care | Penn Medicine">
+    <Header href="#" campaignPhone={campaignPhone}>
+        <hgroup class="screen-reader-only">
+            <h1>Penn Medicine</h1>
+            <p>Penn Orthopaedics - Expert Foot and Ankle Care</p>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#">Request Appointment</a></li>
+                <li><a href="#conditions">Conditions</a></li>
+                <li><a href="#experience">Our Experience</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="43" formName="MSK - Foot and Ankle Req Appt">
+            <hgroup slot="hgroup">
+                <h2>Expert Foot and Ankle Care</h2>
+                <p>Get Back on Your Feet with Penn Orthopaedics</p>
+            </hgroup>
+            <section slot="copy">
+                <p>At Penn Orthopaedics, our team of foot and ankle experts provide top-quality care for the full spectrum of conditions that can be caused by injury, overuse, arthritis or genetics. </p>
+                <p>We are proud to offer both non-surgical and surgical treatment options and are the only program in the region to offer the latest minimally invasive foot and ankle surgery (MIS) available. MIS is designed to reduce scarring, minimize pain, and speed up the healing process. </p>
+                <p>No matter your foot and ankle condition, we're dedicated to you - providing the support and guidance you need throughout your journey so that you can get back on your feet and return to your normal activities as quickly as possible. </p>
+                <p>To make an appointment, please call XXX-XXX-XXXX or fill out our form. A member of our team will call you back between 8:30 am and 5 pm, Monday through Friday, to help you schedule.</p>
+            </section>
+        </ContentWithForm>
+        <Content id="conditions" class="bg-white">
+            <hgroup>
+                <h2>Foot and Ankle Conditions We Treat </h2>
+            </hgroup>
+            <p>Some of the foot and ankle conditions we treat include: </p>
+            <ul class="two-columns">
+                <li>Achilles injuries</li>
+                <li>Ankle ligament injury</li>
+                <li>Ankle pain</li>
+                <li>Arthritis of the foot and ankle</li>
+                <li>Bunions (also known as hallux valgus)</li>
+                <li>Clubfoot (residual clubfoot in adults)</li>
+                <li>Diabetic and geriatric foot conditions</li>
+                <li>Flat foot</li>
+                <li>Foot pain</li>
+                <li>Fractures to the foot and ankle</li>
+                <li>Hallux rigidus</li>
+                <li>Hammer toe</li>
+                <li>High arches</li>
+                <li>Heel pain</li>
+                <li>Nail conditions</li>
+                <li>Neuromas</li>
+                <li>Osteochondritis dissecans (OCD)</li>
+                <li>Plantar fasciitis</li>
+                <li>Sports injuries</li>
+                <li>Sprains</li>
+                <li>Tendon injuries</li>
+                <li>Trauma</li>
+            </ul>
+        </Content>
+        <Content id="experience" class="bg-blue-lightest">
+            <hgroup>
+                <h2>Experience You Can Trust </h2>
+            </hgroup>
+            <p>The orthopaedic experts at Penn Medicine have decades of experience treating foot and ankle conditions. Not only is our team highly skilled and experienced, but they are also actively involved in academic research. </p>
+            <p>This allows us to stay at the cutting-edge of understanding foot and ankle conditions and to develop innovative, patient-centered treatment options. By choosing Penn Orthopaedics, you can be sure that you are receiving the most up-to-date and effective treatments available. </p>
+            <p>The Penn Center for Advanced Cartilage Repair and Osteochondritis Dissecans Treatment is one of the first centers in the nation to focus on osteochondritis dissecans (OCD) and offers the most advanced treatment available in the Philadelphia region. Our surgeons are highly experienced in treating OCD, using the latest techniques and technologies to provide the best possible outcomes for our patients. </p>
+        </Content>
+        <Content id="locations" class="bg-white">
+            <hgroup>
+                <h2>Penn Orthopaedics Foot & Ankle Practice Locations</h2>
+            </hgroup>
+            <!--
+            <MapEmbed src="https://www.google.com/maps/d/u/1/embed?mid=1E841J2nIizXGj89N7PdIRfeWb526qvI&ehbc=2E312F">
+            </MapEmbed>
+             -->
+        </Content>
+    </main>
+    <Footer target="#" class=""/>
+</Layout>

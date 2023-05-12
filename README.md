@@ -1,34 +1,35 @@
-# Astro Starter Kit: Basics
+# Penn Medicine Digital campaigns
 
-```
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Installation 
 
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of your this project, you'll see the following folders and files:
 
 ```
 /
 ├── public/
-│   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │    └── scripts/
+│   │        └── { JS Files Go Here }
+│   │    └── styles/
+│   │        └── { CSS Files Go Here }
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── { Components Go Here }
 │   ├── layouts/
+│   │   └── sections/
+│   │   └── { Sections Go Here }
 │   │   └── Layout.astro
+│   │   └── LayoutThankyou.astro
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       └── {Service Line}/
+│           └── {Page Name}
+│               └── index.astro
+│               └── thank-you.astro
+├── package.json
+└── astro.config.mjs
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.

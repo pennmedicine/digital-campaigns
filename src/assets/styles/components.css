@@ -1,0 +1,55 @@
+:root {
+    --card-gallery-gap: var(--size-3);
+    --card-padding: var(--size-3);
+    --card-border-color: var(--gray-dark);
+    --card-border-radius: var(--border-radius);
+    --card-border-width: ;
+    --card-white: var(--white);
+
+    --headshot-border-radius: var(--border-radius-sm);
+    --headshot-name-color: var(--blue-dark);
+}
+/* CARDS */
+.card-gallery {
+    display: grid;
+    gap: var(--card-gallery-gap);
+    padding: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.card-gallery.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+.card-gallery.three-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    border-color: var(--card-border-color);
+    border: 1px solid;
+}
+
+.card img {
+    margin: var(--card-padding) auto;
+}
+
+.card.white {
+    background-color: var(--card-white);
+}
+
+/* /* Headshots */
+.headshot {
+
+}
+.headshot img {
+    border-radius: var(--headshot-border-radius);
+}
+.headshot.with-name p {
+    color: var(--headshot-name-color);
+    font-weight: bold;
+    text-align: center;
+    border-radius: var(--headshot-border-radius);
+}
