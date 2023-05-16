@@ -4,18 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fieldMap.formname = document.querySelector(".calc-formname");
     fieldMap.subject = document.querySelector(".calc-subject");
-    fieldMap.categoryGA = document.querySelector(".calc-categoryGA");
+    fieldMap.referrer = document.querySelector(".calc-referrer");
     fieldMap.utm_source = document.querySelector(".calc-utmSource");
     fieldMap.utm_medium= document.querySelector(".calc-utmMedium");
     fieldMap.utm_campaign = document.querySelector(".calc-utmCampaign");
     fieldMap.utm_term = document.querySelector(".calc-utmTerm");
     fieldMap.utm_content = document.querySelector(".calc-utmContent");
-    fieldMap.referrer = document.querySelector(".calc-referrer");
+    fieldMap.categoryGA = document.querySelector(".calc-categoryGA");
     fieldMap._ga = document.querySelector(".calc-gaId");
     fieldMap.gclid = document.querySelector(".calc-gclid");
     fieldMap.submitUrl = document.querySelector(".calc-submitUrl");
     fieldMap.redirectUrl = document.querySelector(".calc-redirectUrl");
-    
+    console.log(fieldMap);
     var urlParameters = window.location.search.slice(1).split("&");
 
     urlParameters.forEach(param=> {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             fieldMap[key].value = val;
         }
     })
-    if ( document.querySelector('[data-formname]').value) {
+    if ( document.querySelector('[data-formname]').dataset.formname) {
         fieldMap.formname.value = document.querySelector('[data-formname]').dataset.formname;
         fieldMap.subject.value = document.querySelector('[data-formname]').dataset.formname;
     }

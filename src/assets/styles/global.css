@@ -29,7 +29,7 @@ html {
     background-color: var(--button-color);
     color: var(--button-text-color);
     border-radius: var(--button-radius);
-    padding: var(--button-padding);
+    padding: calc(var(--button-padding) * 0.5) var(--button-padding);
     text-decoration: none;
 }
 .button:hover {

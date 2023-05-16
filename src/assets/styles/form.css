@@ -23,9 +23,6 @@
     width: 100%;
     max-width: var(--form-width);
 }
-#form-container hgroup {
-    margin-bottom: 0;
-}
 
 label {
     font-size: var(--label-size);

@@ -1,0 +1,52 @@
+---
+import Layout from '@layouts/Layout.astro';
+import ContentWithForm from '@layouts/sections/ContentWithForm.astro';
+import Content from '@layouts/sections/Content.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import MapEmbed from '@components/MapEmbed.astro';
+
+var campaignPhone = "215-316-5052"
+---
+
+<Layout title="Breast Cancer Risks and Prevention | Penn Medicine">
+    <Header href="#" campaignPhone={campaignPhone}>
+        <hgroup class="screen-reader-only">
+            <h1>Penn Medicine</h1>
+            <p>Breast Cancer Risks and Prevention</p>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#">Request Appointment</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="61" formName="Cancer%20-%20Breast%20-%20Risk%20Prevention">
+            <hgroup slot="hgroup">
+                <h2>Early Detection Saves Lives</h2>
+                <p>Schedule Your Mammogram</p>
+            </hgroup>
+            <section slot="copy">
+                <p>A mammogram could save your life. </p>
+                <p>40 or older? You should get one every year. </p>
+                <p>When it comes to breast imaging, Penn Radiology delivers the highest quality of care available. With dedicated experts in breast imaging and breast cancer care, as well as the most advanced technologies, you can feel confident that you'll receive an accurate diagnosis and greater peace of mind with your results. </p>
+                <p>We offer evening and weekend hours appointments at locations throughout the Philadelphia region. To schedule, call us at <a href="tel:2153165052">215-316-5052</a> or submit our form and we will call you back within one business day to help you make an appointment. </p>
+            </section>
+            <hgroup slot="form-heading">
+                <h3>Schedule your Mammogram</h3>
+            </hgroup>
+        </ContentWithForm>
+        <Content id="locations" class="">
+            <hgroup>
+                <h2>Convenient Locations Close to You </h2>
+            </hgroup>
+            <p>Don't delay your mammogram - early detection is your best defense against breast cancer. We make it easy to find a location close to home at a time that works best for you. </p>
+            <p>Our dedicated breast imaging experts provide 3-D mammography, breast MRI and breast ultrasounds in 18 convenient locations throughout the Philadelphia region. We offer convenient appointment times, evening and weekend hours, quick report turnaround time to help you easily complete this essential part of your annual wellness routine. </p>
+            <MapEmbed src="https://www.google.com/maps/d/u/1/embed?mid=1WJspXoeez3hZf0m5mUR6UQ7bcXv2eEY&ehbc=2E312F">
+            </MapEmbed>
+        </Content>
+    </main>
+    <Footer target="#" class="" />
+</Layout>

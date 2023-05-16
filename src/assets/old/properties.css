@@ -1,4 +1,9 @@
 :root {
+    /* TYPOGRAPHY */
+    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+
+    /* END TYPOGRAPHY */
+
     /* COLOR */
     --white: white;
 
@@ -35,7 +40,6 @@
     --size-15: 30rem;
 
     /* TYPOGRAPHY */
-    --font-sans: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
     --font-size-00: .5rem;
     --font-size-0: .75rem;
     --font-size-1: 1rem;
@@ -46,6 +50,7 @@
     --font-size-6: 2.5rem;
     --font-size-7: 3rem;
     --font-size-8: 3.5rem;
+    
     --size-content-1: 20ch;
     --size-content-2: 45ch;
     --size-content-3: 60ch;

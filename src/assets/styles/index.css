@@ -17,4 +17,7 @@
 @import "./form.css";
 
 /* CONTENT - Content sections and copy */
+@import "./media.css";
+
+/* CONTENT - Content sections and copy */
 @import "./components.css";

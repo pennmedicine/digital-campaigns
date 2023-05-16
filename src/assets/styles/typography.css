@@ -45,7 +45,7 @@ hgroup :is(h1, h2, h3, h4, h5, h6)~p {
     font-size: var(--h4-size);
     font-weight: bold;
     color: var(--subheading-color);
-    margin-top: var(--paragraph-spacing);
+    margin-top: calc(var(--paragraph-spacing) * 0.5);
     margin-bottom: 0;
 }
 
@@ -58,6 +58,10 @@ ul,
 ol,
 summary {
     margin-bottom: var(--paragraph-spacing);
+}
+ul > li > ul {
+    margin-bottom: 0;
+    padding-left: var(--paragraph-spacing);
 }
 
 details {

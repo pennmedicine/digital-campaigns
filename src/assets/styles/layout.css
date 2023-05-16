@@ -10,7 +10,7 @@
     --header-border-color: var(--blue-dark);
     --header-padding: var(--size-2);
     --header-nav-font-size: var(--font-size-0);
-    --header-nav-font-color: var(--gray-dark);
+    --header-nav-font-color: var(--blue-dark);
     --footer-height: 80px;
     --footer-bg-color: var(--blue-dark);
     --footer-padding: var(--size-7);
@@ -63,10 +63,11 @@ header nav ul li {
     display: flex;
 }
 
-header a {
+header nav a {
     font-size: var(--header-nav-font-size);
     color: var(--header-nav-font-color);
     text-decoration: none;
+    padding: 1rem 0;
 }
 
 /* /* FOOTER */

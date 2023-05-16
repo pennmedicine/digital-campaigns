@@ -21,6 +21,7 @@ const { id, class: className, formId, formName } = Astro.props;
                         <h3>Request an Appointment</h3>
                     </hgroup>
                 </slot>
+                <slot name="form-copy"/>
                 <Form formId={formId} formName={formName}></Form>
             </div>
         </section>

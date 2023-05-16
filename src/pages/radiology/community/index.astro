@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/Layout.astro';
+import ContentWithForm from '@layouts/sections/ContentWithForm.astro';
+import Content from '@layouts/sections/Content.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import MapEmbed from '@components/MapEmbed.astro';
+
+var campaignPhone = "215-316-5144"
+---
+
+<Layout title="Penn Radiology | Expert Imaging Close to Home">
+    <Header href="#" campaignPhone={campaignPhone}>
+        <hgroup class="screen-reader-only">
+            <h1>Penn Radiology</h1>
+            <p>Expert Imaging Close to Home</p>
+        </hgroup>
+        <nav>
+            <ul>
+                <li><a href="#">Request Appointment</a></li>
+                <li><a href="#services">Services We Offer</a></li>
+                <li><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="45" formName="Radiology%20-%20Community">
+            <hgroup slot="hgroup">
+                <h2>Expert Imaging Close to Home </h2>
+            </hgroup>
+            <section slot="copy">
+                <p>At Penn Radiology, you can get the care you need when you need it -- and close to home. </p>
+                <p>Our expert radiologists offer the most advanced imaging services at 18 locations throughout the Philadelphia region. </p>
+                <p>We also offer evening and weekend hours, and rapid results, so you can get the care you need as quickly as possible. </p>
+                <p>To make an appointment with Penn Radiology call us at 215-316-5144 or submit our form and we will call you back within one business day to help you schedule.
+            </section>
+            <hgroup slot="form-heading">
+                <h3>Make an Appointment</h3>
+            </hgroup>
+        </ContentWithForm>
+        <Content id="services" class="">
+            <hgroup>
+                <h2>Radiology Services We Offer </h2>
+            </hgroup>
+            <p>Penn Radiology does more than 1 million diagnostic studies and therapeutic procedures each year. With among the most experience in the region, you can trust you’ll receive an accurate diagnosis and greater peace of mind with your results.</p>
+            <p>Our services include: </p>
+            <ul class="two-columns">
+                <li>3-D Mammogram </li>
+                <li>Digital Mammography:
+                    <ul>
+                        <li>Stereotactic Breast Biopsy </li>
+                        <li>Ultrasound Guided Biopsy </li>
+                    </ul>
+                </li>
+                <li>Biopsies of the Chest, Abdomen and Bone </li>
+                <li>Bone Density Scan (Dexascan) </li>
+                <li>Cardiac Calcium Scoring </li>
+                <li>CT </li>
+                <li>CT Angiography </li>
+                <li>Low Dose CT Lung Screening </li>
+                <li>MRI, Breast MRI, MRA </li>
+                <li>Musculoskeletal </li>
+                <li>Nuclear Medicine </li>
+                <li>OB / GYN </li>
+                <li>Plain X-Rays and Fluoroscopy (Using All Digital Equipment) </li>
+                <li>Positron Emission Tomography (PET) </li>
+                <li>Thyroid Biopsy </li>
+                <li>Ultrasound </li>
+                <li>Vascular </li>
+            </ul>
+        </Content>
+        <Content id="locations" class="">
+            <hgroup>
+                <h2>Convenient Locations Close to You </h2>
+            </hgroup>
+            <p>Penn Radiology makes it easy to find an appointment in a location close to home and at a time that works best for you. </p>
+            <p>Many of our 18 locations throughout the Philadelphia region offers evening and weekend hours and rapid results. </p>
+            <MapEmbed src="https://www.google.com/maps/d/u/1/embed?mid=1WJspXoeez3hZf0m5mUR6UQ7bcXv2eEY&ehbc=2E312F">
+            </MapEmbed>
+        </Content>
+    </main>
+    <Footer target="#" class=""/>
+</Layout>
