@@ -11,10 +11,7 @@ var campaignPhone = "215-316-5144"
 
 <Layout title="Penn Radiology | Expert Imaging Close to Home">
     <Header href="#" campaignPhone={campaignPhone}>
-        <hgroup class="screen-reader-only">
-            <h1>Penn Radiology</h1>
-            <p>Expert Imaging Close to Home</p>
-        </hgroup>
+        <p class="screen-reader-only">Penn Radiology - Expert Imaging Close to Home</p>
         <nav>
             <ul>
                 <li><a href="#">Request Appointment</a></li>
@@ -26,42 +23,39 @@ var campaignPhone = "215-316-5144"
     <main>
         <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="45" formName="Radiology%20-%20Community">
             <hgroup slot="hgroup">
-                <h2>Expert Imaging Close to Home </h2>
+                <h1>Expert Imaging Close to Home </h1>
             </hgroup>
             <section slot="copy">
                 <p>At Penn Radiology, you can get the care you need when you need it -- and close to home. </p>
+                <hgroup>
+                    <h2>Specialized Radiology Experts</h2>
+                </hgroup>
                 <p>Our expert radiologists offer the most advanced imaging services at 18 locations throughout the Philadelphia region. </p>
                 <p>We also offer evening and weekend hours, and rapid results, so you can get the care you need as quickly as possible. </p>
-                <p>To make an appointment with Penn Radiology call us at 215-316-5144 or submit our form and we will call you back within one business day to help you schedule.
+                <hgroup>
+                    <h3>Schedule Your Imaging Appointment</h3>
+                    </hgroup>
+                <p>To make an appointment with Penn Radiology call us at <a href="tel:2153165144">215-316-5144</a> or submit our form and we will call you back within one business day to help you schedule.
             </section>
             <hgroup slot="form-heading">
                 <h3>Make an Appointment</h3>
             </hgroup>
         </ContentWithForm>
-        <Content id="services" class="">
+        <Content id="services" class="bg-blue-lightest">
             <hgroup>
                 <h2>Radiology Services We Offer </h2>
             </hgroup>
             <p>Penn Radiology does more than 1 million diagnostic studies and therapeutic procedures each year. With among the most experience in the region, you can trust you’ll receive an accurate diagnosis and greater peace of mind with your results.</p>
             <p>Our services include: </p>
             <ul class="two-columns">
-                <li>3-D Mammogram </li>
-                <li>Digital Mammography:
-                    <ul>
-                        <li>Stereotactic Breast Biopsy </li>
-                        <li>Ultrasound Guided Biopsy </li>
-                    </ul>
-                </li>
-                <li>Biopsies of the Chest, Abdomen and Bone </li>
+                <li>3-D Mammography</li>
                 <li>Bone Density Scan (Dexascan) </li>
                 <li>Cardiac Calcium Scoring </li>
                 <li>CT </li>
                 <li>CT Angiography </li>
                 <li>Low Dose CT Lung Screening </li>
                 <li>MRI, Breast MRI, MRA </li>
-                <li>Musculoskeletal </li>
                 <li>Nuclear Medicine </li>
-                <li>OB / GYN </li>
                 <li>Plain X-Rays and Fluoroscopy (Using All Digital Equipment) </li>
                 <li>Positron Emission Tomography (PET) </li>
                 <li>Thyroid Biopsy </li>
@@ -79,5 +73,5 @@ var campaignPhone = "215-316-5144"
             </MapEmbed>
         </Content>
     </main>
-    <Footer target="#" class=""/>
+    <Footer target="#" class="" />
 </Layout>

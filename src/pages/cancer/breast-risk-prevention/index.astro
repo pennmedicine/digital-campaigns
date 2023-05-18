@@ -11,10 +11,7 @@ var campaignPhone = "215-316-5052"
 
 <Layout title="Breast Cancer Risks and Prevention | Penn Medicine">
     <Header href="#" campaignPhone={campaignPhone}>
-        <hgroup class="screen-reader-only">
-            <h1>Penn Medicine</h1>
-            <p>Breast Cancer Risks and Prevention</p>
-        </hgroup>
+        <p class="screen-reader-only">Penn Medicine - Breast Cancer Risks and Prevention</p>
         <nav>
             <ul>
                 <li><a href="#">Request Appointment</a></li>
@@ -25,20 +22,25 @@ var campaignPhone = "215-316-5052"
     <main>
         <ContentWithForm id="request-appointment" class="bg-white-to-blue" formId="61" formName="Cancer%20-%20Breast%20-%20Risk%20Prevention">
             <hgroup slot="hgroup">
-                <h2>Early Detection Saves Lives</h2>
-                <p>Schedule Your Mammogram</p>
+                <h1>Early Detection Saves Lives</h1>
             </hgroup>
             <section slot="copy">
                 <p>A mammogram could save your life. </p>
                 <p>40 or older? You should get one every year. </p>
+                <hgroup>
+                    <h2>Learn About Mammograms and Breast Cancer Prevention</h2>
+                </hgroup>
                 <p>When it comes to breast imaging, Penn Radiology delivers the highest quality of care available. With dedicated experts in breast imaging and breast cancer care, as well as the most advanced technologies, you can feel confident that you'll receive an accurate diagnosis and greater peace of mind with your results. </p>
+                <hgroup>
+                    <h3>Stay Ahead of Breast Cancer With Regular Mammograms</h3>
+                </hgroup>
                 <p>We offer evening and weekend hours appointments at locations throughout the Philadelphia region. To schedule, call us at <a href="tel:2153165052">215-316-5052</a> or submit our form and we will call you back within one business day to help you make an appointment. </p>
             </section>
             <hgroup slot="form-heading">
                 <h3>Schedule your Mammogram</h3>
             </hgroup>
         </ContentWithForm>
-        <Content id="locations" class="">
+        <Content id="locations" class="bg-blue-lightest">
             <hgroup>
                 <h2>Convenient Locations Close to You </h2>
             </hgroup>
