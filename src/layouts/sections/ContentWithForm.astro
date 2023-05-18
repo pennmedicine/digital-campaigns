@@ -13,7 +13,6 @@ const { id, class: className, formId, formName } = Astro.props;
 <section id={id} class={className}>
     <div class="two-columns">
         <slot name="hgroup"/>
-        <slot name="copy"/>
         <section id="form-container">
             <div>
                 <slot name="form-heading">
@@ -25,5 +24,6 @@ const { id, class: className, formId, formName } = Astro.props;
                 <Form formId={formId} formName={formName}></Form>
             </div>
         </section>
+        <slot name="copy"/>
     </div>
 </section>
