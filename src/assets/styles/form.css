@@ -5,6 +5,7 @@
 */
 :root {
     --form-width: var(--size-content-2);
+    --heading-color: var(--blue);
     --label-size: var(--font-size-0);
     --label-color: var(--gray-dark);
     --input-radius: var(--border-radius-sm);
@@ -18,6 +19,10 @@
 #form-container {
     display: flex;
     justify-content: center;
+    order: 2;
+}
+#form-container h3 {
+    color: var(--heading-color);
 }
 #form-container > div {
     width: 100%;
