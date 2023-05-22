@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Form from '@components/Form.astro';
+
+import {Content as ReadMe} from '../../README.md';
 ---
 
-<Layout title="Abramson Cancer Center | Penn Medicine">
+<Layout title="Digital Campaigns | Penn Medicine">
     <header>
         <div>
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 364.8 59.5" height="50">
@@ -168,63 +169,81 @@ import Form from '@components/Form.astro';
 		C47.6,28.1,47.6,5.1,47.6,5.1L47.6,5.1z" />
                 </g>
             </svg>
-            <hgroup class="screen-reader-only">
-                <h1>Penn Medicine</h1>
-                <p>Abramson Cancer Center</p>
-            </hgroup>
-            <nav>
-                <ul>
-                    <li><a href="#request-appointment">Request Appointment</a></li>
-                    <li><a href="#cancer-types">Cancer Types</a></li>
-                </ul>
-            </nav>
-            <a href="tel:2155555555" class="button">215-555-5555</a>
         </div>
     </header>
     <main>
-        <section id="request-appointment" class="bg-white-to-blue">
-            <div class="content two-columns">
-                <section>
-                    <hgroup>
-                        <h2>Advanced and Personalized Cancer Care</h2>
-                    </hgroup>
-                    <p>We understand that every person and every cancer is unique.</p>
-                    <p>That's why Penn Medicine's Abramson Cancer Center team is dedicated to creating a treatment plan tailored to your individual needs, so you can receive the best possible care and get back to living your life.</p>
-                    <img src="https://lp.pennmedicine.org/-/media/Images/digitalcampaigns/cancer/general/cancergeneral.jpg" class="inline-image">
-                </section>
-                <section id="form-container">
-                    <h3>Request an Appointment</h3>
-                    <Form formId="63"></Form>
-                </section>
-            </div>
+		<section>
+			<div>
+				<ReadMe/>
+			</div>
+		</section>
+		<!--
+        <section>
+            <hgroup>
+                <h2>Cancer</h2>
+            </hgroup>
+            <iframe src="https://lp.pennmedicine.org/cancer/general" height="480">
+            </iframe>
+            <iframe src="https://lp.pennmedicine.org/cancer/gynonc" height="480">
+            </iframe>
+            <iframe src="https://lp.pennmedicine.org/cancer/proton" height="480">
+            </iframe>
+            <iframe src="https://lp.pennmedicine.org/cancer/breast-risk-prevention-new" height="480">
+            </iframe>
         </section>
-        <section id="cancer-types" class="bg-blue-lightest">
-            <div class="content one-column">
-                <hgroup>
-                    <h2>Cancer Type and Treatment Options</h2>
-                </hgroup>
-                <p>At Penn Medicine's Abramson Cancer Center, we are committed to being by your side every step of the way.</p>
-                <p>Our team of world-class cancer specialists is highly experienced in treating all types of cancer, including:</p>
-                <ul class="two-columns">
-                    <li>breast cancer</li>
-                    <li>carcinomas</li>
-                    <li>colon cancer</li>
-                    <li>gastrointestinal (GI) cancer</li>
-                    <li>leukemia</li>
-                    <li>liver cancer</li>
-                    <li>lung cancer</li>
-                    <li>lymphoma</li>
-                    <li>melanoma</li>
-                    <li>pancreatic cancer</li>
-                    <li>prostate cancer</li>
-                    <li>rectal cancer</li>
-                    <li>sarcomas</li>
-                    <li>and many others</li>
-                </ul>
-                <p>We offer a wide range of treatments that are the latest in cancer care, including proton therapy, immunotherapy and advanced surgical options.</p>
-                <p>We also are committed to advancing cancer research and treatment through clinical trials. Our patients have access to nearly 200 active trials across cancer types - some of which are offered only at Penn Medicine.</p>
-                <a href="#request-appointment" class="button section-cta">Request Appointment</a>
-            </div>
+        <section>
+            <hgroup>
+                <h2>LGH</h2>
+            </hgroup>
+            <iframe src="https://lp.pennmedicine.org/lgh/spine" height="480">
+            </iframe>
         </section>
+		<section>
+            <hgroup>
+                <h2>MSK</h2>
+            </hgroup>
+			<iframe src="https://lp.pennmedicine.org/msk/foot-ankle" height="480">
+            </iframe>
+			</section>
+        <section>
+            <hgroup>
+                <h2>Neuroscience</h2>
+            </hgroup>
+            <iframe src="https://lp.pennmedicine.org/neuroscience/epilepsy" height="480">
+            </iframe>
+            <iframe src="https://lp.pennmedicine.org/neuroscience/multiple-sclerosis" height="480">
+            </iframe>
+            <iframe src="https://lp.pennmedicine.org/neuroscience/spine" height="480">
+            </iframe>
+        </section>
+		 -->
     </main>
 </Layout>
+<style is:inline>
+    main section.iframes {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: max-content;
+        gap: 1rem;
+    }
+
+    main section.iframes hgroup {
+        grid-column-start: span 3;
+    }
+
+    iframe {
+        height: 100%;
+    }
+	h1,h2,h3,h4,h5,h6 {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	p code {
+    border-radius: 0.25rem;
+    background: #f7f7f7;
+    padding: 0.125rem;
+    color: grey;
+}
+</style>
